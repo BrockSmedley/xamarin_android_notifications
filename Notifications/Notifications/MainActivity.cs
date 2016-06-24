@@ -36,7 +36,11 @@ namespace Notifications {
 					.SetContentTitle("Notification")
 					.SetContentText("Here's your notification!")
 					.SetSmallIcon(Resource.Drawable.Icon)
-					.SetVibrate(vibratePattern);
+					.SetVibrate(vibratePattern)
+					.SetStyle(new Notification.BigTextStyle())
+					.SetCategory(Notification.CategoryReminder)
+					.SetPriority((int)NotificationPriority.High);
+				
 				
 
 				//get notification manager
@@ -44,6 +48,7 @@ namespace Notifications {
 				
 				//build notification
 				Notification notification = builder.Build();
+				
 
 				//notify user
 				const int notificationId = 0;
