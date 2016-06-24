@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Hello">Hello World, Click Me!</string>
+    <string name="Hello">Give me a notification!</string>
     <string name="ApplicationName">Notifications</string>
 </resources>
